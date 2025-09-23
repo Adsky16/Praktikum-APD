@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Post test APD 1"/>
+        <attribute name="authors" value="TUF"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-09-15 07:46:04 AM"/>
+        <attribute name="created" value="VFVGO0FESVRZQUZSMTY7MjAyNS0wOS0xMzsxMjoyNToyNiBQTTsyMjIy"/>
+        <attribute name="edited" value="VFVGO0FESVRZQUZSMTY7MjAyNS0wOS0xNTswNzo0NjowNCBBTTszOzIzMjI="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="pemakaian, tarif, totalbayar" type="Integer" array="False" size=""/>
+            <output expression="&quot;Masukkan pemakaian listrik&quot;" newline="True"/>
+            <input variable="pemakaian"/>
+            <if expression="pemakaian&lt;=100">
+                <then>
+                    <assign variable="tarif" expression="1200"/>
+                </then>
+                <else>
+                    <if expression="pemakaian&lt;=300">
+                        <then>
+                            <assign variable="tarif" expression="1500"/>
+                        </then>
+                        <else>
+                            <assign variable="tarif" expression="2000"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+            <assign variable="totalbayar" expression="pemakaian*tarif"/>
+            <output expression="&quot;Total bayar = Rp. &quot;&amp;totalbayar" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
