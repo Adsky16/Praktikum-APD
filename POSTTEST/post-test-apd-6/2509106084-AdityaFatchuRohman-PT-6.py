@@ -14,7 +14,7 @@ model_senjata = [
     ['COMPOUND BOW']  # Senjata khusus
 ]
 
-# === Statistik tiap jenis ===
+# Statistik tiap jenis
 statistik_rifle = [
     {"Damage": 42, "Fire Rate": 750, "Accuracy": 70, "Mobility": 60, "Range": 600},
     {"Damage": 49, "Fire Rate": 600, "Accuracy": 65, "Mobility": 55, "Range": 550},
@@ -91,7 +91,7 @@ statistik_khusus = [
 
 semua_statistik = [statistik_rifle, statistik_smg, statistik_shotgun, statistik_lmg, statistik_marksman, statistik_sniper, statistik_pistol, statistik_khusus]
 
-# === Rekomendasi ===
+# Rekomendasi
 rekomendasi_list = [
     ['M4A1', 'AKM', 'K416'],
     ['MP5', 'P90', 'VECTOR'],
