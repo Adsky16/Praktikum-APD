@@ -162,7 +162,7 @@ def register():
         if user[0] == username:
             print("Username sudah digunakan, gantii!")
             pause()
-            return
+            return register()
     data_user.append([username, password, "user"])
     print("Akun berhasil dibuat!")
     pause()
@@ -203,7 +203,7 @@ def tampil_rekomendasi():
 def tampil_model_rekomendasi(pilih_jenis):
     while True:
         clear()
-        print("REKOMENDASI " + jenis_senjata[pilih_jenis]+":")
+        print("REKOMENDASI " + jenis_senjata[pilih_jenis].upper() +":")
         for j in range(len(rekomendasi_list[pilih_jenis])):
             print(f"{j+1}. {rekomendasi_list[pilih_jenis][j]}")
         print(str(len(rekomendasi_list[pilih_jenis])+1) + ". Kembali")
